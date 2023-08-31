@@ -1,0 +1,106 @@
+<!doctype html>
+<head>
+   <meta charset="utf-8">
+    <title>Vikash Maurya</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="vm logo.png">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+<script src="https://kit.fontawesome.com/5bccef97e2.js" crossorigin="anonymous"></script>
+
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "montserrat";
+}
+body{
+  background: #333;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card{
+  cursor: pointer;
+  width: 350px;
+  height: 500px;
+}
+.front,.back{
+  width: 120%;
+  height: 110%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 120%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: white;
+  transform: perspective(600px) rotateY(180deg);
+}
+.back-content{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
+}
+.sm{
+  margin: 20px 0;
+}
+.sm a{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  font-size: 18px;
+  transition: 0.4s;
+  border-radius: 50%
+}
+.sm a:hover{
+  background: red;
+  color: rgb(72, 255, 0);
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+
+</style>
+    <div class="card middle">
+      <div class="front">
+        <img src="images/vish.jpg" alt="Vikash maurya">
+      </div>
+      <div class="back">
+        <div class="back-content middle">
+          <h1 style="color: rgb(20, 4, 243);">Vikash Maurya</h1> 
+          <span>Join me</span>
+          <div class="sm">
+            <a href="https://www.codechef.com/users/vikashmaurya74" target= "blank"><img src="images/codechef.png" width="20" alt text="codechef"></a>
+            <a href="https://www.hackerrank.com/vikashmaurya740" target= "blank"> <i class="fab fa-hackerrank"></i></a>
+            <a href="https://www.hackerearth.com/@vikashmaurya740" target= "blank"><img src="images/hackerearth.png" width="20" alt="hackerearth"></a>
+             <a href="https://github.com/MrVikashMaurya" target= "blank"><i class="fa fa-github" aria-visible="true"></i></a>
+            <a href="https://www.linkedin.com/in/mrvikashmaurya/" target= "blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/official_maurya" target= "blank"><i class="fab fa-twitter"></i></a>
+           	<a href="https://www.facebook.com/vikash.maurya.52459/" target= "blank"><i class="fab fa-facebook-f"></i></a>
+			       <a href="https://www.instagram.com/official_vikash_maurya/" target= "blank"><i class="fab fa-instagram"></i></a>
+          	  		 <a href="https://wa.me/8176084173" target= "blank"> <i class="fab fa-whatsapp"></i></a>	
+          </div>
+        </div>
+      </div>
+    </div>
+    </html5>
+
+
+  
